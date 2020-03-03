@@ -9,20 +9,29 @@ os.system('ncgen -b roms_frc.cdl')
 f = Dataset('roms_frc.nc', 'a')
 
 # Make list of forcing variables to set (must match "roms_frc.cdl"!)
-frcvar = ['swrad', 'shflux', 'swflux', 'sustr', 'svstr']
+frcvar = ['swrad', 'shflux', 'swflux', 'sustr', 'svstr', 'Wave_dissip', 'Pair', 'Qair', 'Tair', 'rain', 'cloud', 'Uwind', 'Vwind', 'dewpoint']
 
 # Loop over variables and initialize to zero.
 #
 # NOTE! For more advanced input, edit yourself.
 #
 for varname in frcvar:
-    print varname
+    print(varname)
     var = f.variables[varname]
     var[:] = 0.0
 
 # Setting constant stress in x-direction
 sustr = f.variables['sustr']
 sustr[:] = 0.1
+
+Uwind = f.variables['Uwind']
+Uwind[:] = 10
+
+f.variables['Tair'][:] = 15
+f.variables['Pair'][:] = 1013
+f.variables['cloud'][:] = 0.5
+f.variables['dewpoint'][:] = 14
+f.variables['Qair'][:] = 70
 
 # Set time variable, the end time is the important one.
 #

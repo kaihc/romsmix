@@ -120,7 +120,7 @@ export     MY_PROJECT_DIR=${PWD}
 # machine. This script is designed to more easily allow for differing paths
 # to the code and inputs on differing machines.
 
- export       MY_ROMS_SRC=${HOME}/ROMS-trunk
+ export       MY_ROMS_SRC=${HOME}/ROMS_latest
 
 # Set path of the directory containing makefile configuration (*.mk) files.
 # The user has the option to specify a customized version of these files
@@ -178,7 +178,7 @@ export     MY_PROJECT_DIR=${PWD}
 #export         USE_DEBUG=on            # use Fortran debugging flags
  export         USE_LARGE=on            # activate 64-bit compilation
  export       USE_NETCDF4=on            # compile with NetCDF-4 library
- export          USE_HDF5=on            # compile with HDF5 library
+#export          USE_HDF5=on            # compile with HDF5 library
 #export   USE_PARALLEL_IO=on            # Parallel I/O with NetCDF-4/HDF5
 
 #--------------------------------------------------------------------------
@@ -255,7 +255,7 @@ fi
 
 if [ -n "${USE_MPI:+1}" ] && [ -n "${USE_OpenMP:+1}" ]; then
   echo "You cannot activate USE_MPI and USE_OpenMP at the same time!"
-  exit 1
+  exit 1libhdf5-openmpi-dev
 fi
 
 #--------------------------------------------------------------------------

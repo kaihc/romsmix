@@ -853,7 +853,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! Input NetCDF file names, [1:Ngrids].
 
      GRDNAME == roms_grd.nc
-     ININAME == roms_ini.nc
+     ININAME == ../Initial/roms_ini.nc
      ITLNAME == roms_itl.nc
      IRPNAME == roms_irp.nc
      IADNAME == roms_iad.nc
@@ -926,7 +926,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      NFFILES == 1                          ! number of unique forcing files
 
-     FRCNAME == roms_frc.nc               ! forcing file 1, grid 1
+     FRCNAME == ../Forcing/roms_frc.nc               ! forcing file 1, grid 1
 
 ! Output NetCDF file names, [1:Ngrids].
 
