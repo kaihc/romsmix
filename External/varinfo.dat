@@ -1365,7 +1365,7 @@
   'surface air pressure'
   'millibar'                                       ! [millibar]
   'Pair, scalar, series'
-  'pair_time'
+  'ocean_time'
   'idPair'
   'r2dvar'
   1.0d0
@@ -1374,7 +1374,7 @@
   'surface air temperature'
   'Celsius'                                        ! [Kelvin]
   'Tair, scalar, series'
-  'tair_time'
+  'ocean_time'
   'idTair'
   'r2dvar'
   1.0d0
@@ -1383,7 +1383,7 @@
   'surface air relative humidity'                  !  relative    or  specific
   'percentage'                                     ! [percentage  or  g/kg    ]
   'Qair, scalar, series'
-  'qair_time'
+  'ocean_time'
   'idQair'
   'r2dvar'                                         ! relative        specific
   0.01d0                                           ! 1/100      or   1.0
@@ -1392,7 +1392,7 @@
   'cloud fraction'
   'nondimensional'                                 ! [nondimensional]
   'cloud, scalar, series'
-  'cloud_time'
+  'ocean_time'
   'idCfra'
   'r2dvar'
   1.0d0
@@ -1446,7 +1446,7 @@
   'rain fall rate'
   'kilogram meter-2 second-1'                      ! [kg m2/s]
   'rain, scalar, series'
-  'rain_time'
+  'ocean_time'
   'idrain'
   'r2dvar'
   1.0d0                                            ! 1/rhow (0.001 m3/kg) if m/s
@@ -1464,7 +1464,7 @@
   'surface u-wind component'
   'meter second-1'                                 ! [m/s]
   'u-wind, scalar, series'
-  'wind_time'
+  'ocean_time'
   'idUair'
   'r2dvar'
   1.0d0
@@ -1473,7 +1473,7 @@
   'surface v-wind component'
   'meter second-1'                                 ! [m/s]
   'v-wind, scalar, series'
-  'wind_time'
+  'ocean_time'
   'idVair'
   'r2dvar'
   1.0d0
@@ -1536,7 +1536,7 @@
   'wave dissipation'
   'Watts meter-2'                                  ! [W/m2]
   'Wave_dissip, scalar, series'
-  'wave_time'
+  'ocean_time'
   'idWdis'
   'r2dvar'
   0.00097561                                       !1/rho0

@@ -32,7 +32,15 @@
 # define RI_SPLINES
 #endif
 
-#define LONGWAVE_OUT
+#define BULK_FLUXES
+#define ANA_SRFLUX
+#define CLOUDS
+#define ALBEDO
+#define EMINUSP
+#define LONGWAVE
+
+#undef LONGWAVE_OUT
+#define COOL_SKIN
 
 #undef ANA_INITIAL
 #define ANA_BSFLUX
