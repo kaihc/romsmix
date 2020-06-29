@@ -21,7 +21,10 @@
 #define SALINITY
 #define SOLVE3D
 
-#define LMD_MIXING
+#define GLS_MIXING
+#define TKE_WAVEDISS
+
+#undef LMD_MIXING
 #ifdef LMD_MIXING
 # define LMD_RIMIX
 # define LMD_CONVEC
