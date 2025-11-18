@@ -531,7 +531,7 @@
         DO j=JstrT,JendT
           DO i=IstrT,IendT
             val1=200.0+z_r(i,j,k)
-            t(i,j,k,1,itemp)=T0(ng)+(10.0/200.0)*val1
+            t(i,j,k,1,itemp)= T0(ng)+(10.0/200.0)*val1
             t(i,j,k,1,isalt)=S0(ng)
 !            t(i,j,k,1,isalt)=S0(ng)-(5.0/200.0)*val1
           END DO

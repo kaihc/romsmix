@@ -171,7 +171,7 @@ export     MY_PROJECT_DIR=${PWD}
 # Here you choose what turbulence scheme to use. 
 #
 # Analytical constant viscosity and diffusivity (values are set in ana_vmix.h)
- export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DCOLUMN_CONST_MIX"
+# export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DCOLUMN_CONST_MIX"
 #
 # The Richardson number based scheme:
 # export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DBVF_MIXING"
@@ -180,7 +180,7 @@ export     MY_PROJECT_DIR=${PWD}
 # export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DLMD_MIXING"
 #
 # The general length scale scheme:
-# export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DGLS_MIXING"
+ export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DGLS_MIXING"
 #
 
 # Set ROMS to use bulk fluxes.

@@ -24,19 +24,18 @@ z_r = f.variables['z_rho'][:,:,7,6]
 u = f.variables['u'][:,:,7,6]
 v = f.variables['v'][:,:,7,6]
 speed = np.sqrt(u**2 + v**2)
-speed[speed>0.2] = 0.2
 
 # Get time
 otime = f.variables['ocean_time'][:]
 otime = otime/(24*3600.)
-dt = np.array([otime,]*42).transpose()
+dt = np.array([otime,]*400).transpose()
 
 # Open figure
 plt.figure()
 
 # Plot filled contours
 #plt.contourf(dt,z_r,speed,levels=np.logspace(-6,0,25),norm=colors.LogNorm())
-plt.contourf(dt,z_r,speed,25)
+plt.contourf(dt,z_r,speed,50)
 
 # Add info 
 plt.colorbar(label='Speed [m/s]')
