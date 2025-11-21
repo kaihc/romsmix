@@ -184,11 +184,15 @@ export     MY_PROJECT_DIR=${PWD}
 #
 
 # Set ROMS to use bulk fluxes.
-# export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DSOLAR_SOURCE"
-# export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DATM_PRESS"
-# export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DBULK_FLUXES"
-# export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DLONGWAVE"
-# export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DEMINUSP"
+ export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DBULK_FLUXES"
+ export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DATM_PRESS"
+ export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DEMINUSP"
+
+ export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DSOLAR_SOURCE"
+ #export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DLONGWAVE_OUT"
+ export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DLONGWAVE"
+ export      MY_CPP_FLAGS="${MY_CPP_FLAGS} -DANA_CLOUD" # Remove line if "cloud" is part of forcing file
+ 
 #
 
 #--------------------------------------------------------------------------
@@ -224,7 +228,7 @@ export     MY_PROJECT_DIR=${PWD}
 # instruct the ROMS build system to use nf-config to determine the
 # necessary libraries and paths to link into the ROMS executable.
 
-#export       USE_NETCDF4=on            # compile with NetCDF-4 library
+ export       USE_NETCDF4=on            # compile with NetCDF-4 library
 #export   USE_PARALLEL_IO=on            # Parallel I/O with NetCDF-4/HDF5
 #export           USE_PIO=on            # Parallel I/O with PIO library
 #export       USE_SCORPIO=on            # Parallel I/O with SCORPIO library

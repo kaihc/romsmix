@@ -36,8 +36,7 @@
 
 #ifdef GLS_MIXING
 # define CRAIG_BANNER
-# undef CANUTO_A           
-# define KANTHA_CLAYSON     
+# define CANUTO_A           
 #endif
 
 #define ANA_BSFLUX

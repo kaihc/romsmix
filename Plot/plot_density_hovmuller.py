@@ -1,5 +1,7 @@
 import numpy as np
 import argparse
+import matplotlib
+matplotlib.use('TkAgg')
 from matplotlib import pyplot as plt
 from matplotlib import cm
 from netCDF4 import Dataset

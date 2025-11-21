@@ -1062,7 +1062,7 @@ PIO_I2C_Preq = 65                 ! Maximum pending I2C requests
 
      NFFILES == 1                          ! number of unique forcing files
 
-     FRCNAME == roms_frc.nc               ! forcing file 1, grid 1
+     FRCNAME == roms_frc2.nc               ! forcing file 1, grid 1
 
 ! Output NetCDF file names, [1:Ngrids].
 
